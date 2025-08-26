@@ -1,0 +1,17 @@
+# Ambiente virtual
+.venv/
+env/
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Relatórios do Robot Framework
+output.xml
+log.html
+report.html
+results/
+
+# Configurações locais do VS Code
+.vscode/
+
