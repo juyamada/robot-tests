@@ -1,72 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-08-26T11:54:54.946162" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-04T08:30:10.690039" rpa="false" schemaversion="5">
 <suite id="s1" name="Robot-Tests" source="C:\Users\jysya\robot-tests">
 <suite id="s1-s1" name="Tests" source="C:\Users\jysya\robot-tests\tests">
-<suite id="s1-s1-s1" name="Estrutura" source="C:\Users\jysya\robot-tests\tests\estrutura.robot">
-<test id="s1-s1-s1-t1" name="Cenário 1: Teste abrir site do google" line="19">
-<kw name="abrir site do google">
+<suite id="s1-s1-s1" name="Form" source="C:\Users\jysya\robot-tests\tests\form.robot">
+<test id="s1-s1-s1-t1" name="Cenário 1: Preencher formulário" line="36">
+<kw name="abrir navegador">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-26T11:54:55.290384" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
-<msg time="2025-08-26T11:54:55.307400" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
-<arg>https://www.google.com</arg>
+<msg time="2025-09-04T08:30:11.148016" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2025-09-04T08:30:11.156146" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>https://demoqa.com/text-box</arg>
 <arg>chrome</arg>
 <arg>executable_path=C:/drivers/chromedriver/139/chromedriver.exe</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-26T11:54:55.289378" elapsed="2.187783"/>
+<status status="PASS" start="2025-09-04T08:30:11.146998" elapsed="7.920281"/>
 </kw>
-<status status="PASS" start="2025-08-26T11:54:55.287774" elapsed="2.189387"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-04T08:30:19.068282" elapsed="0.096816"/>
 </kw>
-<kw name="fechar browser">
+<status status="PASS" start="2025-09-04T08:30:11.146622" elapsed="8.019480"/>
+</kw>
+<kw name="preencher campos">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-04T08:30:19.176339" level="INFO">Typing text 'Juliana Yuri Yamada' into text field 'id:userName'.</msg>
+<arg>${input_userName}</arg>
+<arg>Juliana Yuri Yamada</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-04T08:30:19.171098" elapsed="0.406477"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-04T08:30:20.587072" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-04T08:30:19.577575" elapsed="1.009497"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-04T08:30:20.591874" level="INFO">Typing text 'teste@gmail.com' into text field 'id:userEmail'.</msg>
+<arg>${input_userEmail}</arg>
+<arg>teste@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-04T08:30:20.588530" elapsed="0.140609"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-04T08:30:21.737073" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-04T08:30:20.730137" elapsed="1.006936"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-04T08:30:21.743026" level="INFO">Typing text 'Travessa Diagonal, 305' into text field 'id:currentAddress'.</msg>
+<arg>${input_currentAddress}</arg>
+<arg>Travessa Diagonal, 305</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-04T08:30:21.739642" elapsed="0.179363"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-04T08:30:22.930576" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-04T08:30:21.919005" elapsed="1.012022"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-04T08:30:22.933076" level="INFO">Typing text 'Rua dos Alfeneiros, 4' into text field 'id:permanentAddress'.</msg>
+<arg>${input_permanentAddress}</arg>
+<arg>Rua dos Alfeneiros, 4</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-04T08:30:22.931027" elapsed="0.134391"/>
+</kw>
+<status status="PASS" start="2025-09-04T08:30:19.169099" elapsed="3.896319"/>
+</kw>
+<kw name="clicar em submit">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-09-04T08:30:23.068838" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-09-04T08:30:23.067826" elapsed="0.013547"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-04T08:30:23.083379" level="INFO">Clicking element 'id:submit'.</msg>
+<arg>${button_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-04T08:30:23.082381" elapsed="0.133279"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-04T08:30:24.221846" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-04T08:30:23.216667" elapsed="1.007235"/>
+</kw>
+<status status="PASS" start="2025-09-04T08:30:23.066715" elapsed="1.157187"/>
+</kw>
+<kw name="fechar navegador">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-08-26T11:54:57.479789" elapsed="2.324091"/>
+<status status="PASS" start="2025-09-04T08:30:24.227136" elapsed="2.361161"/>
 </kw>
-<status status="PASS" start="2025-08-26T11:54:57.478160" elapsed="2.327134"/>
+<status status="PASS" start="2025-09-04T08:30:24.225974" elapsed="2.362323"/>
 </kw>
-<status status="PASS" start="2025-08-26T11:54:55.281867" elapsed="4.524436"/>
+<status status="PASS" start="2025-09-04T08:30:11.139825" elapsed="15.451666"/>
 </test>
-<test id="s1-s1-s1-t2" name="Cenário 2: Teste abrir site da globo" line="23">
-<kw name="abrir site da globo">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-26T11:54:59.824006" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
-<msg time="2025-08-26T11:54:59.838363" level="INFO">Opening browser 'chrome' to base url 'https://www.globo.com/'.</msg>
-<arg>https://www.globo.com/</arg>
-<arg>chrome</arg>
-<arg>executable_path=C:/drivers/chromedriver/139/chromedriver.exe</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-26T11:54:59.823000" elapsed="6.959354"/>
-</kw>
-<status status="PASS" start="2025-08-26T11:54:59.821497" elapsed="6.960857"/>
-</kw>
-<kw name="fechar browser">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-08-26T11:55:06.785356" elapsed="2.440734"/>
-</kw>
-<status status="PASS" start="2025-08-26T11:55:06.783352" elapsed="2.442738"/>
-</kw>
-<status status="PASS" start="2025-08-26T11:54:59.816182" elapsed="9.411158"/>
-</test>
-<status status="PASS" start="2025-08-26T11:54:55.003055" elapsed="14.230377"/>
+<status status="PASS" start="2025-09-04T08:30:10.752720" elapsed="15.855460"/>
 </suite>
-<status status="PASS" start="2025-08-26T11:54:54.997923" elapsed="14.240924"/>
+<status status="PASS" start="2025-09-04T08:30:10.746523" elapsed="15.878133"/>
 </suite>
-<status status="PASS" start="2025-08-26T11:54:54.954256" elapsed="14.294615"/>
+<status status="PASS" start="2025-09-04T08:30:10.699735" elapsed="15.934227"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Robot-Tests" id="s1" pass="2" fail="0" skip="0">Robot-Tests</stat>
-<stat name="Tests" id="s1-s1" pass="2" fail="0" skip="0">Robot-Tests.Tests</stat>
-<stat name="Estrutura" id="s1-s1-s1" pass="2" fail="0" skip="0">Robot-Tests.Tests.Estrutura</stat>
+<stat name="Robot-Tests" id="s1" pass="1" fail="0" skip="0">Robot-Tests</stat>
+<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">Robot-Tests.Tests</stat>
+<stat name="Form" id="s1-s1-s1" pass="1" fail="0" skip="0">Robot-Tests.Tests.Form</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-08-26T11:54:55.290384" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
-<msg time="2025-08-26T11:54:59.824006" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2025-09-04T08:30:11.148016" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
 </errors>
 </robot>
