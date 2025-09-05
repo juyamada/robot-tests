@@ -1,160 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-05T15:33:51.702093" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-05T17:16:53.488331" rpa="false" schemaversion="5">
 <suite id="s1" name="Robot-Tests" source="C:\Users\jysya\robot-tests">
 <suite id="s1-s1" name="Tests" source="C:\Users\jysya\robot-tests\tests">
-<suite id="s1-s1-s1" name="Formulario Xpath Avancado" source="C:\Users\jysya\robot-tests\tests\formulario_xpath_avancado.robot">
-<test id="s1-s1-s1-t1" name="Cenário 1: Preencher formulário" line="54">
-<kw name="abrir site">
+<suite id="s1-s1-s1" name="Formulario Basico Xpath" source="C:\Users\jysya\robot-tests\tests\formulario_basico_xpath.robot">
+<test id="s1-s1-s1-t1" name="Cenário 1: Preencher formulário" line="34">
+<kw name="abrir navegador">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-05T15:33:52.018909" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
-<msg time="2025-09-05T15:33:52.023209" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/automation-practice-form'.</msg>
-<arg>https://demoqa.com/automation-practice-form</arg>
-<arg>chrome</arg>
+<msg time="2025-09-05T17:16:53.928068" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2025-09-05T17:16:53.944845" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>https://demoqa.com/text-box</arg>
+<arg>Chrome</arg>
 <arg>executable_path=C:/drivers/chromedriver/139/chromedriver.exe</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-05T15:33:52.017854" elapsed="19.929660"/>
+<status status="PASS" start="2025-09-05T17:16:53.927011" elapsed="5.733451"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-05T15:34:11.948530" elapsed="0.057570"/>
+<status status="PASS" start="2025-09-05T17:16:59.661460" elapsed="0.099855"/>
 </kw>
-<status status="PASS" start="2025-09-05T15:33:52.016985" elapsed="19.989115"/>
+<status status="PASS" start="2025-09-05T17:16:53.925964" elapsed="5.835351"/>
 </kw>
 <kw name="preencher campos">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-05T15:34:12.010126" level="INFO">Typing text 'Leandro' into text field 'id: firstName'.</msg>
-<arg>${first_name}</arg>
-<arg>Leandro</arg>
+<msg time="2025-09-05T17:16:59.767225" level="INFO">Typing text 'Olívia Marques' into text field '//input[@id='userName']'.</msg>
+<arg>${userName}</arg>
+<arg>Olívia Marques</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-05T15:34:12.006100" elapsed="0.178417"/>
+<status status="PASS" start="2025-09-05T17:16:59.764573" elapsed="1.016381"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-05T15:34:12.185518" level="INFO">Typing text 'Fonseca' into text field 'id: lastName'.</msg>
-<arg>${last_name}</arg>
-<arg>Fonseca</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-05T15:34:12.184517" elapsed="0.116827"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-05T15:34:12.305160" level="INFO">Typing text 'teste@teste.com.br' into text field 'id: userEmail'.</msg>
+<msg time="2025-09-05T17:17:00.794316" level="INFO">Typing text 'emailteste@gmail.com' into text field '//input[@id='userEmail']'.</msg>
 <arg>${email}</arg>
-<arg>teste@teste.com.br</arg>
+<arg>emailteste@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-05T15:34:12.301344" elapsed="0.097926"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-09-05T15:34:12.399270" level="INFO">Executing JavaScript:
-document.querySelector("label[for='gender-radio-3']").click()
-Without any arguments.</msg>
-<arg>document.querySelector("label[for='gender-radio-3']").click()</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-09-05T15:34:12.399270" elapsed="0.015878"/>
+<status status="PASS" start="2025-09-05T17:17:00.787066" elapsed="0.373276"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-05T15:34:12.416559" level="INFO">Typing text '11988776655' into text field 'id: userNumber'.</msg>
-<arg>${mobile_number}</arg>
-<arg>11988776655</arg>
+<msg time="2025-09-05T17:17:01.162567" level="INFO">Typing text 'Rua Sabiá, 250' into text field '//textarea[@id='currentAddress']'.</msg>
+<arg>${currentAddress}</arg>
+<arg>Rua Sabiá, 250</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-05T15:34:12.415148" elapsed="0.185793"/>
+<status status="PASS" start="2025-09-05T17:17:01.161360" elapsed="0.734070"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-05T15:34:12.606037" level="INFO">Typing text 'Biology' into text field 'id: subjectsInput'.</msg>
-<arg>${subjects}</arg>
-<arg>Biology</arg>
+<msg time="2025-09-05T17:17:01.907001" level="INFO">Typing text 'CEP:05625-000' into text field '//textarea[@id='currentAddress']'.</msg>
+<arg>${currentAddress}</arg>
+<arg>CEP:05625-000</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-05T15:34:12.606037" elapsed="0.159928"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2025-09-05T15:34:12.772810" level="INFO">Sending key(s) ('RETURN',) to id: subjectsInput element.</msg>
-<msg time="2025-09-05T15:34:13.187007" level="INFO">Pressing special key RETURN to element.</msg>
-<msg time="2025-09-05T15:34:13.187007" level="INFO">Releasing special key RETURN.</msg>
-<arg>${subjects}</arg>
-<arg>RETURN</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2025-09-05T15:34:12.768777" elapsed="0.467735"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-05T15:34:13.236512" level="INFO">Clicking element 'xpath=//label[@for='hobbies-checkbox-1']'.</msg>
-<arg>${hobbies}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-05T15:34:13.236512" elapsed="0.136349"/>
-</kw>
-<kw name="Choose File" owner="SeleniumLibrary">
-<msg time="2025-09-05T15:34:13.377597" level="INFO">Sending C:\Users\jysya\robot-tests\resources\upload_test.png to browser.</msg>
-<arg>${picture}</arg>
-<arg>C:/Users/jysya/robot-tests/resources/upload_test.png</arg>
-<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<status status="PASS" start="2025-09-05T15:34:13.375111" elapsed="0.056955"/>
+<status status="PASS" start="2025-09-05T17:17:01.896939" elapsed="0.312264"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-05T15:34:13.432066" level="INFO">Typing text 'Rua xpto' into text field 'id: currentAddress'.</msg>
-<arg>${current_address}</arg>
-<arg>Rua xpto</arg>
+<msg time="2025-09-05T17:17:02.211214" level="INFO">Typing text 'Rua das flores, 586' into text field '//textarea[@id='permanentAddress']'.</msg>
+<arg>${permanetAddress}</arg>
+<arg>Rua das flores, 586</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-05T15:34:13.432066" elapsed="0.287806"/>
+<status status="PASS" start="2025-09-05T17:17:02.211214" elapsed="0.349931"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-05T15:34:13.722742" level="INFO">Typing text 'Haryana' into text field 'id: react-select-3-input'.</msg>
-<arg>${state}</arg>
-<arg>Haryana</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-05T15:34:13.722742" elapsed="0.129350"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2025-09-05T15:34:13.854102" level="INFO">Sending key(s) ('RETURN',) to id: react-select-3-input element.</msg>
-<msg time="2025-09-05T15:34:14.171659" level="INFO">Pressing special key RETURN to element.</msg>
-<msg time="2025-09-05T15:34:14.171659" level="INFO">Releasing special key RETURN.</msg>
-<arg>${state}</arg>
-<arg>RETURN</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2025-09-05T15:34:13.852092" elapsed="0.335319"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-05T15:34:14.188442" level="INFO">Typing text 'Panipat' into text field 'id: react-select-4-input'.</msg>
-<arg>${city}</arg>
-<arg>Panipat</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-05T15:34:14.187411" elapsed="0.105627"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2025-09-05T15:34:14.296142" level="INFO">Sending key(s) ('RETURN',) to id: react-select-4-input element.</msg>
-<msg time="2025-09-05T15:34:14.594352" level="INFO">Pressing special key RETURN to element.</msg>
-<msg time="2025-09-05T15:34:14.595860" level="INFO">Releasing special key RETURN.</msg>
-<arg>${city}</arg>
-<arg>RETURN</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2025-09-05T15:34:14.294035" elapsed="0.324737"/>
-</kw>
-<status status="PASS" start="2025-09-05T15:34:12.006100" elapsed="2.612672"/>
+<status status="PASS" start="2025-09-05T17:16:59.763328" elapsed="2.798816"/>
 </kw>
 <kw name="clicar em submit">
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>${button_submit}</arg>
+<arg>${submit}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-09-05T15:34:14.629864" elapsed="0.280366"/>
+<status status="PASS" start="2025-09-05T17:17:02.565155" elapsed="0.363059"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-09-05T15:34:14.911465" level="INFO">Clicking button 'id: submit'.</msg>
-<arg>${button_submit}</arg>
+<msg time="2025-09-05T17:17:02.931431" level="INFO">Clicking button '//button[@id='submit']'.</msg>
+<arg>${submit}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-05T15:34:14.910230" elapsed="0.120466"/>
+<status status="PASS" start="2025-09-05T17:17:02.929412" elapsed="0.192554"/>
 </kw>
-<status status="PASS" start="2025-09-05T15:34:14.626724" elapsed="0.404560"/>
+<status status="PASS" start="2025-09-05T17:17:02.563147" elapsed="0.559811"/>
 </kw>
 <kw name="fechar navegador">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-05T15:34:15.032636" elapsed="2.462552"/>
+<status status="PASS" start="2025-09-05T17:17:03.132515" elapsed="2.519600"/>
 </kw>
-<status status="PASS" start="2025-09-05T15:34:15.031284" elapsed="2.463904"/>
+<status status="PASS" start="2025-09-05T17:17:03.126956" elapsed="2.525159"/>
 </kw>
-<status status="PASS" start="2025-09-05T15:33:52.010531" elapsed="25.484657"/>
+<status status="PASS" start="2025-09-05T17:16:53.921441" elapsed="11.730674"/>
 </test>
-<status status="PASS" start="2025-09-05T15:33:51.770204" elapsed="25.743669"/>
+<status status="PASS" start="2025-09-05T17:16:53.560802" elapsed="12.097286"/>
 </suite>
-<status status="PASS" start="2025-09-05T15:33:51.754439" elapsed="25.780759"/>
+<status status="PASS" start="2025-09-05T17:16:53.555099" elapsed="12.108526"/>
 </suite>
-<status status="PASS" start="2025-09-05T15:33:51.707626" elapsed="25.842721"/>
+<status status="PASS" start="2025-09-05T17:16:53.497035" elapsed="12.200115"/>
 </suite>
 <statistics>
 <total>
@@ -165,10 +96,10 @@ Without any arguments.</msg>
 <suite>
 <stat name="Robot-Tests" id="s1" pass="1" fail="0" skip="0">Robot-Tests</stat>
 <stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">Robot-Tests.Tests</stat>
-<stat name="Formulario Xpath Avancado" id="s1-s1-s1" pass="1" fail="0" skip="0">Robot-Tests.Tests.Formulario Xpath Avancado</stat>
+<stat name="Formulario Basico Xpath" id="s1-s1-s1" pass="1" fail="0" skip="0">Robot-Tests.Tests.Formulario Basico Xpath</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-09-05T15:33:52.018909" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2025-09-05T17:16:53.928068" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
 </errors>
 </robot>
