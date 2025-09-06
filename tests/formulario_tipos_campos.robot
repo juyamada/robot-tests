@@ -38,7 +38,7 @@ preencher campos
     Input Text                    ${state}             Haryana  
     Press Keys                    ${state}             RETURN      
     Input Text                    ${city}              Panipat
-    Press Keys                     ${city}              RETURN
+    Press Keys                    ${city}              RETURN
     
 
 

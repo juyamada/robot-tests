@@ -21,6 +21,6 @@ Cenário 1: Teste abrir site do google
     fechar browser
 
 Cenário 2: Teste abrir site da globo
-    abrir site da globo   
+    abrir site da globo  
     fechar browser
       
