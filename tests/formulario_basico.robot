@@ -34,6 +34,7 @@ fechar navegador
 
 *** Test Cases ***
 Cenário 1: Preencher formulário
+    [Tags]  regressivo
     abrir navegador
     preencher campos
     clicar em submit

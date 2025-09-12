@@ -1,219 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-06T00:09:25.460891" rpa="false" schemaversion="5">
-<suite id="s1" name="Robot-Tests" source="C:\Users\jysya\robot-tests">
-<suite id="s1-s1" name="Tests" source="C:\Users\jysya\robot-tests\tests">
-<suite id="s1-s1-s1" name="Inpi" source="C:\Users\jysya\robot-tests\tests\inpi.robot">
-<test id="s1-s1-s1-t1" name="Cenário 1: Verificar atualizações inpi" line="52">
-<kw name="abrir site inpi">
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-12T14:29:41.329957" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\jysya\robot-tests\tests">
+<suite id="s1-s1" name="Formulario Basico" source="C:\Users\jysya\robot-tests\tests\formulario_basico.robot">
+<test id="s1-s1-t1" name="Cenário 1: Preencher formulário" line="36">
+<kw name="abrir navegador">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-06T00:09:26.209952" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
-<msg time="2025-09-06T00:09:26.233772" level="INFO">Opening browser 'Chrome' to base url 'https://busca.inpi.gov.br/pePI/jsp/marcas/Pesquisa_num_processo.jsp'.</msg>
-<arg>https://busca.inpi.gov.br/pePI/jsp/marcas/Pesquisa_num_processo.jsp</arg>
-<arg>Chrome</arg>
+<msg time="2025-09-12T14:29:41.640433" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2025-09-12T14:29:41.641536" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>https://demoqa.com/text-box</arg>
+<arg>chrome</arg>
 <arg>executable_path=C:/drivers/chromedriver/139/chromedriver.exe</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-06T00:09:26.209952" elapsed="2.176259"/>
+<status status="PASS" start="2025-09-12T14:29:41.640433" elapsed="30.892785"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-06T00:09:28.386211" elapsed="0.042749"/>
+<status status="PASS" start="2025-09-12T14:30:12.534760" elapsed="0.107310"/>
 </kw>
-<status status="PASS" start="2025-09-06T00:09:26.208121" elapsed="2.220839"/>
+<status status="PASS" start="2025-09-12T14:29:41.639420" elapsed="31.004174"/>
 </kw>
-<kw name="fazer login">
+<kw name="preencher campos">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-06T00:09:28.437997" level="INFO">Typing text 'Leandro89' into text field '//input[@name='T_Login']'.</msg>
-<arg>${userName}</arg>
-<arg>Leandro89</arg>
+<msg time="2025-09-12T14:30:12.652691" level="INFO">Typing text 'Juliana Yuri Yamada' into text field 'id:userName'.</msg>
+<arg>${input_userName}</arg>
+<arg>Juliana Yuri Yamada</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-06T00:09:28.434643" elapsed="0.252820"/>
+<status status="PASS" start="2025-09-12T14:30:12.649701" elapsed="0.189259"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-12T14:30:13.847642" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-12T14:30:12.838960" elapsed="1.008682"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-06T00:09:28.689220" level="INFO">Typing text 'inpi2023' into text field '//input[@name='T_Senha']'.</msg>
-<arg>${password}</arg>
-<arg>inpi2023</arg>
+<msg time="2025-09-12T14:30:13.849656" level="INFO">Typing text 'teste@gmail.com' into text field 'id:userEmail'.</msg>
+<arg>${input_userEmail}</arg>
+<arg>teste@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-06T00:09:28.689220" elapsed="0.268673"/>
+<status status="PASS" start="2025-09-12T14:30:13.848651" elapsed="0.238494"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-12T14:30:15.094674" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-12T14:30:14.087145" elapsed="1.007529"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-12T14:30:15.096626" level="INFO">Typing text 'Travessa Diagonal, 305' into text field 'id:currentAddress'.</msg>
+<arg>${input_currentAddress}</arg>
+<arg>Travessa Diagonal, 305</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-12T14:30:15.095627" elapsed="0.158974"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-12T14:30:16.264728" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-12T14:30:15.254601" elapsed="1.010641"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-12T14:30:16.267271" level="INFO">Typing text 'Rua dos Alfeneiros, 4' into text field 'id:permanentAddress'.</msg>
+<arg>${input_permanentAddress}</arg>
+<arg>Rua dos Alfeneiros, 4</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-12T14:30:16.266251" elapsed="0.138908"/>
+</kw>
+<status status="PASS" start="2025-09-12T14:30:12.647694" elapsed="3.757465"/>
+</kw>
+<kw name="clicar em submit">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-09-12T14:30:16.406564" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-09-12T14:30:16.406564" elapsed="0.004603"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-06T00:09:28.961664" level="INFO">Clicking element '//input[@type='submit' and @value=' Continuar » ']'.</msg>
-<arg>${button_continue}</arg>
+<msg time="2025-09-12T14:30:16.411167" level="INFO">Clicking element 'id:submit'.</msg>
+<arg>${button_submit}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-06T00:09:28.960259" elapsed="0.264654"/>
+<status status="PASS" start="2025-09-12T14:30:16.411167" elapsed="0.098131"/>
 </kw>
-<status status="PASS" start="2025-09-06T00:09:28.431815" elapsed="0.793098"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-12T14:30:17.524768" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-12T14:30:16.509298" elapsed="1.015470"/>
 </kw>
-<kw name="entrar em marcas">
-<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
-<arg>${marca1}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-09-06T00:09:29.231412" elapsed="0.117367"/>
+<status status="PASS" start="2025-09-12T14:30:16.406564" elapsed="1.118204"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-06T00:09:29.348779" level="INFO">Clicking element '//area[@href='/pePI/jsp/marcas/Pesquisa_num_processo.jsp' and @coords='17,16,243,72']'.</msg>
-<arg>${marca1}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-06T00:09:29.348779" elapsed="0.429960"/>
+<kw name="fechar navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-12T14:30:17.526089" elapsed="2.413462"/>
 </kw>
-<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
-<arg>${marca2}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-09-06T00:09:29.779800" elapsed="0.056944"/>
+<status status="PASS" start="2025-09-12T14:30:17.526089" elapsed="2.414604"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-06T00:09:29.836744" level="INFO">Clicking element '//a[@class='titulo' and normalize-space(text()='Pesquisa Básica')]'.</msg>
-<arg>${marca2}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-06T00:09:29.836744" elapsed="0.236940"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-06T00:09:30.073684" level="INFO">Clicking element '//area[contains(@href='../marcas/Pesquisa_classe_avancada.jsp')]'.</msg>
-<msg time="2025-09-06T00:09:30.403542" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-43.png"&gt;&lt;img src="selenium-screenshot-43.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-09-06T00:09:30.405375" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //area[contains(@href='../marcas/Pesquisa_classe_avancada.jsp')] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//area[contains(@href='../marcas/Pesquisa_classe_avancada.jsp')]' is not a valid XPath expression.
-  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff6e7b378d5+2802741]
-	GetHandleVerifier [0x0x7ff6e789eb70+79568]
-	(No symbol) [0x0x7ff6e763c0fa]
-	(No symbol) [0x0x7ff6e7643abd]
-	(No symbol) [0x0x7ff6e7646b1c]
-	(No symbol) [0x0x7ff6e7646bef]
-	(No symbol) [0x0x7ff6e7692347]
-	(No symbol) [0x0x7ff6e7692d4c]
-	(No symbol) [0x0x7ff6e76e6047]
-	(No symbol) [0x0x7ff6e76baccf]
-	(No symbol) [0x0x7ff6e76e2e24]
-	(No symbol) [0x0x7ff6e76baa63]
-	(No symbol) [0x0x7ff6e7683c91]
-	(No symbol) [0x0x7ff6e7684a23]
-	GetHandleVerifier [0x0x7ff6e7b62ced+2979917]
-	GetHandleVerifier [0x0x7ff6e7b5d0f3+2956371]
-	GetHandleVerifier [0x0x7ff6e7b7acbd+3078173]
-	GetHandleVerifier [0x0x7ff6e78b836e+184014]
-	GetHandleVerifier [0x0x7ff6e78c024f+216495]
-	GetHandleVerifier [0x0x7ff6e78a70c4+113700]
-	GetHandleVerifier [0x0x7ff6e78a7279+114137]
-	GetHandleVerifier [0x0x7ff6e788df78+10968]
-	BaseThreadInitThunk [0x0x7ffa324be8d7+23]
-	RtlUserThreadStart [0x0x7ffa3473c34c+44]
-</msg>
-<arg>${pesquisaAvancada}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-09-06T00:09:30.073684" elapsed="0.342741">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //area[contains(@href='../marcas/Pesquisa_classe_avancada.jsp')] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//area[contains(@href='../marcas/Pesquisa_classe_avancada.jsp')]' is not a valid XPath expression.
-  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff6e7b378d5+2802741]
-	GetHandleVerifier [0x0x7ff6e789eb70+79568]
-	(No symbol) [0x0x7ff6e763c0fa]
-	(No symbol) [0x0x7ff6e7643abd]
-	(No symbol) [0x0x7ff6e7646b1c]
-	(No symbol) [0x0x7ff6e7646bef]
-	(No symbol) [0x0x7ff6e7692347]
-	(No symbol) [0x0x7ff6e7692d4c]
-	(No symbol) [0x0x7ff6e76e6047]
-	(No symbol) [0x0x7ff6e76baccf]
-	(No symbol) [0x0x7ff6e76e2e24]
-	(No symbol) [0x0x7ff6e76baa63]
-	(No symbol) [0x0x7ff6e7683c91]
-	(No symbol) [0x0x7ff6e7684a23]
-	GetHandleVerifier [0x0x7ff6e7b62ced+2979917]
-	GetHandleVerifier [0x0x7ff6e7b5d0f3+2956371]
-	GetHandleVerifier [0x0x7ff6e7b7acbd+3078173]
-	GetHandleVerifier [0x0x7ff6e78b836e+184014]
-	GetHandleVerifier [0x0x7ff6e78c024f+216495]
-	GetHandleVerifier [0x0x7ff6e78a70c4+113700]
-	GetHandleVerifier [0x0x7ff6e78a7279+114137]
-	GetHandleVerifier [0x0x7ff6e788df78+10968]
-	BaseThreadInitThunk [0x0x7ffa324be8d7+23]
-	RtlUserThreadStart [0x0x7ffa3473c34c+44]
-</status>
-</kw>
-<status status="FAIL" start="2025-09-06T00:09:29.228262" elapsed="1.188163">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //area[contains(@href='../marcas/Pesquisa_classe_avancada.jsp')] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//area[contains(@href='../marcas/Pesquisa_classe_avancada.jsp')]' is not a valid XPath expression.
-  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff6e7b378d5+2802741]
-	GetHandleVerifier [0x0x7ff6e789eb70+79568]
-	(No symbol) [0x0x7ff6e763c0fa]
-	(No symbol) [0x0x7ff6e7643abd]
-	(No symbol) [0x0x7ff6e7646b1c]
-	(No symbol) [0x0x7ff6e7646bef]
-	(No symbol) [0x0x7ff6e7692347]
-	(No symbol) [0x0x7ff6e7692d4c]
-	(No symbol) [0x0x7ff6e76e6047]
-	(No symbol) [0x0x7ff6e76baccf]
-	(No symbol) [0x0x7ff6e76e2e24]
-	(No symbol) [0x0x7ff6e76baa63]
-	(No symbol) [0x0x7ff6e7683c91]
-	(No symbol) [0x0x7ff6e7684a23]
-	GetHandleVerifier [0x0x7ff6e7b62ced+2979917]
-	GetHandleVerifier [0x0x7ff6e7b5d0f3+2956371]
-	GetHandleVerifier [0x0x7ff6e7b7acbd+3078173]
-	GetHandleVerifier [0x0x7ff6e78b836e+184014]
-	GetHandleVerifier [0x0x7ff6e78c024f+216495]
-	GetHandleVerifier [0x0x7ff6e78a70c4+113700]
-	GetHandleVerifier [0x0x7ff6e78a7279+114137]
-	GetHandleVerifier [0x0x7ff6e788df78+10968]
-	BaseThreadInitThunk [0x0x7ffa324be8d7+23]
-	RtlUserThreadStart [0x0x7ffa3473c34c+44]
-</status>
-</kw>
-<kw name="buscar marca">
-<status status="NOT RUN" start="2025-09-06T00:09:30.418765" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2025-09-06T00:09:26.199034" elapsed="4.221785">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //area[contains(@href='../marcas/Pesquisa_classe_avancada.jsp')] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//area[contains(@href='../marcas/Pesquisa_classe_avancada.jsp')]' is not a valid XPath expression.
-  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff6e7b378d5+2802741]
-	GetHandleVerifier [0x0x7ff6e789eb70+79568]
-	(No symbol) [0x0x7ff6e763c0fa]
-	(No symbol) [0x0x7ff6e7643abd]
-	(No symbol) [0x0x7ff6e7646b1c]
-	(No symbol) [0x0x7ff6e7646bef]
-	(No symbol) [0x0x7ff6e7692347]
-	(No symbol) [0x0x7ff6e7692d4c]
-	(No symbol) [0x0x7ff6e76e6047]
-	(No symbol) [0x0x7ff6e76baccf]
-	(No symbol) [0x0x7ff6e76e2e24]
-	(No symbol) [0x0x7ff6e76baa63]
-	(No symbol) [0x0x7ff6e7683c91]
-	(No symbol) [0x0x7ff6e7684a23]
-	GetHandleVerifier [0x0x7ff6e7b62ced+2979917]
-	GetHandleVerifier [0x0x7ff6e7b5d0f3+2956371]
-	GetHandleVerifier [0x0x7ff6e7b7acbd+3078173]
-	GetHandleVerifier [0x0x7ff6e78b836e+184014]
-	GetHandleVerifier [0x0x7ff6e78c024f+216495]
-	GetHandleVerifier [0x0x7ff6e78a70c4+113700]
-	GetHandleVerifier [0x0x7ff6e78a7279+114137]
-	GetHandleVerifier [0x0x7ff6e788df78+10968]
-	BaseThreadInitThunk [0x0x7ffa324be8d7+23]
-	RtlUserThreadStart [0x0x7ffa3473c34c+44]
-</status>
+<tag>regressivo</tag>
+<status status="PASS" start="2025-09-12T14:29:41.637983" elapsed="38.302710"/>
 </test>
-<status status="FAIL" start="2025-09-06T00:09:25.551450" elapsed="4.906336"/>
+<status status="PASS" start="2025-09-12T14:29:41.364436" elapsed="38.579410"/>
 </suite>
-<status status="FAIL" start="2025-09-06T00:09:25.529047" elapsed="4.942814"/>
+<suite id="s1-s2" name="Tags" source="C:\Users\jysya\robot-tests\tests\tags.robot">
+<test id="s1-s2-t1" name="Cenário 1: Teste abrir site do google" line="19">
+<kw name="abrir site do google">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-12T14:30:19.970647" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2025-09-12T14:30:19.972734" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>https://www.google.com</arg>
+<arg>chrome</arg>
+<arg>executable_path=C:/drivers/chromedriver/139/chromedriver.exe</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-12T14:30:19.970647" elapsed="2.234013"/>
+</kw>
+<status status="PASS" start="2025-09-12T14:30:19.968107" elapsed="2.236891"/>
+</kw>
+<kw name="fechar browser">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-12T14:30:22.207666" elapsed="2.372704"/>
+</kw>
+<status status="PASS" start="2025-09-12T14:30:22.205666" elapsed="2.376092"/>
+</kw>
+<tag>regressivo</tag>
+<status status="PASS" start="2025-09-12T14:30:19.963771" elapsed="4.618985"/>
+</test>
+<status status="PASS" start="2025-09-12T14:30:19.947042" elapsed="4.638470"/>
 </suite>
-<status status="FAIL" start="2025-09-06T00:09:25.470303" elapsed="5.008885"/>
+<status status="PASS" start="2025-09-12T14:29:41.332006" elapsed="43.255748"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="2" fail="0" skip="0">regressivo</stat>
 </tag>
 <suite>
-<stat name="Robot-Tests" id="s1" pass="0" fail="1" skip="0">Robot-Tests</stat>
-<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">Robot-Tests.Tests</stat>
-<stat name="Inpi" id="s1-s1-s1" pass="0" fail="1" skip="0">Robot-Tests.Tests.Inpi</stat>
+<stat name="Tests" id="s1" pass="2" fail="0" skip="0">Tests</stat>
+<stat name="Formulario Basico" id="s1-s1" pass="1" fail="0" skip="0">Tests.Formulario Basico</stat>
+<stat name="Tags" id="s1-s2" pass="1" fail="0" skip="0">Tests.Tags</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-09-06T00:09:26.209952" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2025-09-12T14:29:41.640433" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2025-09-12T14:30:19.970647" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
 </errors>
 </robot>
